@@ -57,7 +57,7 @@ def products_from_bay_numbers
 
   if invalid_entries.length > 0
     puts ""
-    puts "#{invalid_entries} --- invalid entries"
+    puts "#{invalid_entries.join} --- invalid entries"  # JOIN TO CLEAN UP THE OUTPUT
   else
   end
     intro
@@ -68,7 +68,7 @@ def locate_products
   calculate = []
   route = []
 
-  puts "please insert a list of products separated by a comma."
+  puts "please insert a list of products separated by a comma and a space."
   selection = gets.chomp
   selected_products = selection.split(", ").to_a
   puts ""
@@ -119,6 +119,11 @@ puts "#{@allproducts}"
 # MAIN PROGRAM  ------------------------------
 
 intro
+
+
+
+
+
 
 
 
