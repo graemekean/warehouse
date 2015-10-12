@@ -57,7 +57,7 @@ def products_from_bay_numbers
 
   if invalid_entries.length > 0
     puts ""
-    puts "#{invalid_entries.join} --- invalid entries"  # JOIN TO CLEAN UP THE OUTPUT
+    puts "#{invalid_entries} --- invalid entries"  # JOIN TO CLEAN UP THE OUTPUT
   else
   end
     intro
